@@ -14,8 +14,7 @@ const Home = () => {
                 <span className="block">WEB DEVELOPER</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8 max-w-2xl">
-                I build exceptional digital experiences that are fast,
-                accessible, visually appealing, and responsive.
+                Full-stack developer with backend expertise and frontend flair
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
@@ -55,25 +54,151 @@ const Home = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
             TECHNICAL SKILLS
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              "React",
-              "JavaScript",
-              "Tailwind CSS",
-              "Node.js",
-              "Git",
-              "Figma",
-              "MongoDB",
-              "AWS",
-            ].map((skill) => (
-              <div
-                key={skill}
-                className="bg-white p-6 text-center border border-gray-200 hover:border-black transition-colors"
-              >
-                <div className="text-2xl mb-2">⚡</div>
-                <h3 className="font-bold">{skill}</h3>
+
+          <div className="space-y-8">
+            {/* Frontend */}
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Frontend</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                {[
+                  "React",
+                  "Next.js",
+                  "TypeScript",
+                  "JavaScript",
+                  "Tailwind CSS",
+                ].map((skill) => (
+                  <div
+                    key={skill}
+                    className="bg-white p-4 text-center border border-gray-200 hover:border-black transition-colors rounded"
+                  >
+                    <div className="text-lg mb-2">🎨</div>
+                    <h3 className="font-bold text-sm">{skill}</h3>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* Backend */}
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Backend</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                {[
+                  "Node.js",
+                  "Express.js",
+                  "NestJS",
+                  "GraphQL",
+                  "REST APIs",
+                  "Socket.io",
+                ].map((skill) => (
+                  <div
+                    key={skill}
+                    className="bg-white p-4 text-center border border-gray-200 hover:border-black transition-colors rounded"
+                  >
+                    <div className="text-lg mb-2">⚙️</div>
+                    <h3 className="font-bold text-sm">{skill}</h3>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Mobile */}
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Mobile</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                {["React Native"].map((skill) => (
+                  <div
+                    key={skill}
+                    className="bg-white p-4 text-center border border-gray-200 hover:border-black transition-colors rounded"
+                  >
+                    <div className="text-lg mb-2">📱</div>
+                    <h3 className="font-bold text-sm">{skill}</h3>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Databases */}
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">
+                Databases
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                {["PostgreSQL", "MongoDB", "TypeORM", "Mongoose", "Redis"].map(
+                  (skill) => (
+                    <div
+                      key={skill}
+                      className="bg-white p-4 text-center border border-gray-200 hover:border-black transition-colors rounded"
+                    >
+                      <div className="text-lg mb-2">🗄️</div>
+                      <h3 className="font-bold text-sm">{skill}</h3>
+                    </div>
+                  )
+                )}
+              </div>
+            </div>
+
+            {/* Cloud & DevOps */}
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">
+                Cloud & DevOps
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                {[
+                  "AWS (EC2, S3, RDS)",
+                  "Docker",
+                  "Nginx",
+                  "GitHub Actions",
+                ].map((skill) => (
+                  <div
+                    key={skill}
+                    className="bg-white p-4 text-center border border-gray-200 hover:border-black transition-colors rounded"
+                  >
+                    <div className="text-lg mb-2">☁️</div>
+                    <h3 className="font-bold text-sm">{skill}</h3>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Integrations */}
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">
+                Integrations
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                {[
+                  "Stripe",
+                  "SendGrid",
+                  "Webhooks",
+                  "API Integrations",
+                  "PDF & CSV Generation",
+                ].map((skill) => (
+                  <div
+                    key={skill}
+                    className="bg-white p-4 text-center border border-gray-200 hover:border-black transition-colors rounded"
+                  >
+                    <div className="text-lg mb-2">🔗</div>
+                    <h3 className="font-bold text-sm">{skill}</h3>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Testing */}
+            <div>
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Testing</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                {["Jest (Unit Testing)"].map((skill) => (
+                  <div
+                    key={skill}
+                    className="bg-white p-4 text-center border border-gray-200 hover:border-black transition-colors rounded"
+                  >
+                    <div className="text-lg mb-2">✅</div>
+                    <h3 className="font-bold text-sm">{skill}</h3>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>

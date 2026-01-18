@@ -7,6 +7,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Home", path: "/" },
+    { name: "Skills", path: "/skills" },
     { name: "Work Experience", path: "/experience" },
     { name: "Resume", path: "/resume" },
     { name: "Contact", path: "/contact" },
@@ -19,7 +20,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link to="/" className="text-2xl font-bold tracking-tight">
-              PORTFOLIO
+              IMRAN KHAN
             </Link>
           </div>
 
