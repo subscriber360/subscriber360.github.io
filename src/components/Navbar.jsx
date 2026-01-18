@@ -8,19 +8,22 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Skills", path: "/skills" },
-    { name: "Work Experience", path: "/experience" },
+    { name: "Experience", path: "/experience" },
     { name: "Resume", path: "/resume" },
     { name: "Contact", path: "/contact" },
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <nav className="sticky top-0 z-50 bg-slate-800 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold tracking-tight">
-              IMRAN KHAN
+            <Link
+              to="/"
+              className="text-2xl text-white font-bold tracking-tight"
+            >
+              Portfolio
             </Link>
           </div>
 
@@ -32,8 +35,8 @@ const Navbar = () => {
                 to={item.path}
                 className={`text-sm font-medium transition-colors ${
                   location.pathname === item.path
-                    ? "text-black border-b-2 border-black"
-                    : "text-gray-600 hover:text-black"
+                    ? "text-white border-b-2 border-white"
+                    : "text-gray-200 hover:text-black"
                 }`}
               >
                 {item.name}
@@ -51,7 +54,7 @@ const Navbar = () => {
                 className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
+                stroke="white"
               >
                 {isOpen ? (
                   <path
@@ -83,8 +86,8 @@ const Navbar = () => {
                   to={item.path}
                   className={`block px-3 py-2 text-base font-medium ${
                     location.pathname === item.path
-                      ? "text-black bg-gray-50"
-                      : "text-gray-600 hover:text-black hover:bg-gray-50"
+                      ? "text-black bg-gray-50 "
+                      : "text-black hover:text-black hover:bg-gray-50"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
