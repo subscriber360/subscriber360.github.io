@@ -18,16 +18,16 @@ const Home = () => {
 
               <div className="flex flex-wrap gap-4">
                 <Link
-                  to="/contact"
+                  to="/experience"
                   className="px-8 py-3 bg-black text-white font-medium hover:bg-gray-800 transition-colors"
                 >
-                  CONTACT ME
+                  Work Experience
                 </Link>
                 <Link
-                  to="/resume"
+                  to="/skills"
                   className="px-8 py-3 border-2 border-black text-black font-medium hover:bg-gray-50 transition-colors"
                 >
-                  VIEW RESUME
+                  SKILLS
                 </Link>
               </div>
             </div>
@@ -41,7 +41,7 @@ const Home = () => {
       {/* Skills Section */}
 
       {/* Quick Links */}
-      <section className="py-20 px-4">
+      {/* <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             <Link to="/experience" className="group">
@@ -62,18 +62,18 @@ const Home = () => {
                 <div className="mt-4 text-sm font-medium">VIEW →</div>
               </div>
             </Link>
-            <Link to="/contact" className="group">
+            <Link to="/skills" className="group">
               <div className="border-2 rounded-lg border-black p-8 hover:bg-black hover:text-white transition-all">
-                <h3 className="text-2xl font-bold mb-4">CONTACT</h3>
+                <h3 className="text-2xl font-bold mb-4">SKILLS</h3>
                 <p className="text-gray-600 group-hover:text-gray-300">
-                  Lets get building
+                  Explore my technical expertise
                 </p>
                 <div className="mt-4 text-sm font-medium">VIEW →</div>
               </div>
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };
